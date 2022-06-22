@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relative1">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="342dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="20dp">
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:gravity="end"
+                android:text="Status : " />
+
+            <EditText
+                android:id="@+id/status_val"
+                android:hint="Marche/Arret.. "
+                android:inputType="text"
+                android:focusable="false" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:gravity="end"
+                android:text="Humidité Sol : " />
+
+            <EditText
+                android:id="@+id/sol_val"
+                android:hint="Humidité sol.. "
+                android:inputType="text"
+                android:focusable="false" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:gravity="end"
+                android:text="Nombre valeurs : " />
+
+            <EditText
+                android:id="@+id/number_val"
+                android:hint="Nombre valeurs.."
+                android:inputType="text"
+                android:focusable="false" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:gravity="end"
+                android:text="Date d'ajout : " />
+
+            <EditText
+                android:id="@+id/date_val"
+                android:hint="Date.."
+                android:inputType="text"
+                android:focusable="false" />
+
+        </TableRow>
+
+        <TableRow android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/retour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:gravity="center_horizontal"
+                android:text="Retour"
+                android:textAllCaps="false"
+                android:textSize="20dp" />
+
+
+            <Button
+                android:id="@+id/refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:gravity="center_horizontal"
+                android:text="Refraichir valeurs"
+                android:textAllCaps="false"
+                android:textSize="20dp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="223dp"
+        android:layout_height="103dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="69dp"
+        android:layout_marginTop="36dp"
+        app:srcCompat="@drawable/soil_sensor" />
+</RelativeLayout>

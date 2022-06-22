@@ -1,0 +1,162 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relative1">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Controle etats des Electrovanes"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="342dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:paddingTop="20dp">
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:gravity="end"
+                android:text="Electrovanne1 : "
+                android:textSize="22dp" />
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="155dp"
+                android:text="MARCHE/ARRET" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:gravity="end"
+                android:text=""
+                android:textSize="22dp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:gravity="end"
+                android:text="Electrovanne2 : "
+                android:textSize="22dp" />
+
+            <Switch
+                android:id="@+id/switch2"
+                android:text="MARCHE/ARRET" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:gravity="end"
+                android:text=""
+                android:textSize="22dp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:gravity="end"
+                android:text="Electrovanne3 : "
+                android:textSize="22dp" />
+
+            <Switch
+                android:id="@+id/switch3"
+                android:text="MARCHE/ARRET" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:gravity="end"
+                android:text=""
+                android:textSize="22dp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:gravity="end"
+                android:text="Electrovanne4 : "
+                android:textSize="22dp" />
+
+            <Switch
+                android:id="@+id/switch4"
+                android:text="MARCHE/ARRET" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:gravity="end"
+                android:text=""
+                android:textSize="22dp" />
+        </TableRow>
+        <TableRow android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/retour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:gravity="center_horizontal"
+                android:text="Retour"
+                android:textAllCaps="false"
+                android:textSize="20dp" />
+
+
+            <Button
+                android:id="@+id/commande"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:gravity="center_horizontal"
+                android:text="Envoyer"
+                android:textAllCaps="false"
+                android:textSize="20dp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+
+</RelativeLayout>
